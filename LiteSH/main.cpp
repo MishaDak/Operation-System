@@ -39,7 +39,6 @@ int main(int argc, char **argv) {
     cin >> command;
 
     selection = NetWorkClient(command);
-//    cout << endl;
 
     if (selection == 1) {
         char *name = new char[100];
@@ -71,9 +70,7 @@ int main(int argc, char **argv) {
     } else if (selection == 4) {
         info();
     } else if (selection == 5) {
-
     }
-//    SendSignal(server_pid, SIGKILL);
     dlclose(handle);
     return 0;
 }
